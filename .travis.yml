@@ -19,10 +19,8 @@ install: make install
 
 script:
   - make cgl
-  - make unitTests
 
 after_script:
-  - make uploadCodeCoverage
   - make clean
 
 cache:

@@ -27,16 +27,5 @@ install: clean
 cgl:
 	./.Build/bin/phpcs
 
-unitTests:
-	TYPO3_PATH_WEB=$(TYPO3_WEB_DIR) \
-		.Build/bin/phpunit --colors --debug -v \
-		-c Tests/Unit/UnitTests.xml
-
-uploadCodeCoverage: uploadCodeCoverageToScrutinizer uploadCodeCoverageToCodacy
-
-uploadCodeCoverageToScrutinizer:
-	wget https://scrutinizer-ci.com/ocular.phar && \
-	php ocular.phar code-coverage:upload --format=php-clover .Build/report/functional/clover/coverage
-
 clean:
 	rm -rf .Build composer.lock
