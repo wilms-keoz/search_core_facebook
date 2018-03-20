@@ -1,0 +1,28 @@
+sudo: true
+
+language: php
+
+php:
+  - 7.0
+  - 7.1
+  - 7.2
+
+env:
+  matrix:
+    - TYPO3_VERSION="~7.6"
+    - TYPO3_VERSION="~8.7"
+
+matrix:
+  fast_finish: true
+
+install: make install
+
+script:
+  - make cgl
+
+after_script:
+  - make clean
+
+cache:
+  directories:
+    - $HOME/.composer/cache
