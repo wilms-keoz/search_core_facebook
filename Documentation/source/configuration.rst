@@ -115,9 +115,7 @@ use via TypoScript. Currently only ``fields`` is known to work:
    plugin.tx_searchcore.settings.indexing {
        facebookPosts {
            parameters {
-               parameters {
-                   fields = id,created_time,message,link,permalink_url,picture
-               }
+               fields = id,created_time,message,link,permalink_url,picture
            }
        }
    }

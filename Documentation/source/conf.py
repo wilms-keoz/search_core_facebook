@@ -77,7 +77,7 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'description': 'TYPO3 Extension to integrate search services.',
+    'description': 'TYPO3 Extension to integrate facebook into search_core.',
     'github_user': 'Codappix',
     'github_repo': 'search_core_facebook',
     'github_button': True,

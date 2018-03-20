@@ -31,4 +31,4 @@ credentials. New and existing apps can be managed at https://developers.facebook
 Afterwards you need to enable the extension through the extension manager and need to configure the
 indexing through TypoScript.
 
-.. _download: https://github.com/codappix/search_core_facebook/archive/develop.zip
+.. _download: https://github.com/codappix/search_core_facebook/archive/master.zip
